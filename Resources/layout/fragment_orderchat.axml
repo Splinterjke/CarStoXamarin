@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingBottom="80dp">
+  <EditText
+      android:id="@+id/orderchat_messageEdit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_toLeftOf="@+id/orderchat_send_btn"
+      android:autoText="true"
+      android:hint="type message" />
+
+  <ImageButton
+      android:id="@+id/orderchat_send_btn"
+      android:layout_width="70dp"
+      android:layout_height="40dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"/>
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/orderchat_messages_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/orderchat_messageEdit"
+      android:layout_marginTop="10dp"/>
+</RelativeLayout>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_pressed="true">
+    <layer-list>
+      <item>
+        <shape android:shape="ring"
+               android:innerRadius="80dp"
+               android:thickness="8dp"
+               android:useLevel="false">
+          <padding android:left="30dp"
+                android:top="30dp"
+                android:right="30dp"
+                android:bottom="30dp" />
+          <solid android:color="@color/Accent"/>
+        </shape>
+      </item>
+      <item>
+        <shape android:shape="line">
+
+          <stroke android:width="5dp" android:color="@color/Accent" />
+        </shape>
+      </item>
+      <item>
+        <rotate
+            android:fromDegrees="90"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="-90">
+          <shape android:shape="line">
+            <stroke android:width="5dp" android:color="@color/Accent" />
+          </shape>
+        </rotate>
+      </item>
+    </layer-list>
+  </item>
+  <item>
+    <layer-list>
+      <item>
+        <shape android:shape="ring"
+               android:top="10dp" android:left="10dp" android:bottom="10dp" android:right="10dp"
+               android:innerRadius="80dp"
+               android:thickness="8dp"
+               android:useLevel="false">
+          <padding android:left="30dp"
+                android:top="30dp"
+                android:right="30dp"
+                android:bottom="30dp" />
+          <solid android:color="@color/Accent"/>
+        </shape>
+      </item>
+      <item>
+        <shape android:shape="line">
+          <stroke android:width="5dp" android:color="@color/Accent" />
+        </shape>
+      </item>
+      <item>
+        <rotate
+            android:fromDegrees="90"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="-90">
+          <shape android:shape="line">
+            <stroke android:width="5dp" android:color="@color/Accent" />
+          </shape>
+        </rotate>
+      </item>
+    </layer-list>
+  </item>
+</selector>

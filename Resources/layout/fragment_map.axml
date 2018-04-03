@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/startPageLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:id="@+id/makeOrderBtn"          
+            android:tag="MakeOrder"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/fillFuelBtn"
+            android:scaleType="fitCenter"
+            android:tag="FillFuel"/>
+        <ImageButton
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:id="@+id/openChatBtn"
+            android:tag="OpenChat"/>
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/zoomToGarage"/>
+</RelativeLayout>

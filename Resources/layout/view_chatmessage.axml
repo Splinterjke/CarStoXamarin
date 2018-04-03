@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/view_chatmessage_layout">
+    <ImageView
+        tools:layout_alignParentLeft="true"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+        android:layout_height="48dp"
+        android:layout_width="48dp"
+        android:id="@+id/view_chatmessage_ava" />
+    <FrameLayout
+        tools:layout_toRightOf="@id/view_chatmessage_ava"
+        android:background="@drawable/IncomingMessage"
+        android:id="@+id/view_chatmessage_bubble"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            tools:text="Test message"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minHeight="28dp"
+            android:minWidth="56dp"
+            android:id="@+id/view_chatmessage_text" />
+    </FrameLayout>
+    <TextView
+        tools:layout_toRightOf="@id/view_chatmessage_ava"
+        tools:text="12.03.1994 17:01"
+        android:id="@+id/view_chatmessage_time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/view_chatmessage_bubble" />
+</RelativeLayout>

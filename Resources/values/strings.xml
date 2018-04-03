@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+  <string name="ApplicationName">carsto</string>
+  <string name="Login">Войти</string>
+  <string name="Register">Регистрация</string>
+  <string name="ResetPass">Забыли пароль?</string>
+  <string name="Phone">Номер телефона</string>
+  <string name="SavePassword">Запомнить</string>
+  <string name="Pass">Пароль</string>
+  <string name="RepeatPass">Повторите пароль</string>
+  <string name="PassReset">Сброс</string>
+  <string name="DrawerOpen">drawer open</string>
+  <string name="DrawerClose">drawer close</string>
+  <!--validation errors-->
+  <string name="IncorrectLogin">Некорректный логин</string>
+  <string name="IncorrectPasswordLength">Минимальная длина пароля 6 символов</string>
+  <!--AddCarPage-->
+  <string name="AddCarText">Добавить автомобиль\n
+  в гараж</string>
+</resources>

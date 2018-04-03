@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/logo2" />
+    <EditText
+        android:id="@+id/login_phone_edittext"
+        android:singleLine="true"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:drawablePadding="20dp"
+        android:hint="PHONE"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#AAAAAA"
+        android:layout_marginTop="30dp" />
+    <EditText
+        android:id="@+id/login_password_edittext"
+        android:singleLine="true"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:drawablePadding="20dp"
+        android:hint="PASSWORD"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#AAAAAA"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/login_signin_btn"
+        android:layout_marginTop="20dp"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:text="SIGN IN"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textSize="16dp"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/login_createaccount_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE ACCOUNT"
+        android:textSize="20dp"
+        android:textColor="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:id="@+id/makeorderpartlist_coordinatorlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <carsto.customcontrols.ZoomableLayout
+    android:id="@+id/zoomableLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+      android:id="@+id/makeorderpartlist_image"
+      android:scaleType="matrix"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+  </carsto.customcontrols.ZoomableLayout>
+
+  <android.support.v7.widget.CardView
+      android:id="@+id/makeorderpartlist_bottom_sheet"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="12dp"
+      android:layout_marginRight="12dp"
+      app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+      app:behavior_hideable="false"
+      app:cardPreventCornerOverlap="false"
+      app:cardBackgroundColor="@color/Primary"
+      app:cardCornerRadius="0dp"
+      app:cardElevation="10dp">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/makeorderpartlist_partList" />
+  </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <TextView
+        android:text="Выберите автомобиль"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+  <ImageView
+      android:id="@+id/fillfuel_car_ava"
+      android:src="@drawable/avacar"
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:scaleType="centerCrop" />
+  <LinearLayout
+      android:layout_marginTop="10dp"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:maxHeight="30dp">
+    <ImageView
+        android:id="@+id/fillfuel_car_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+    <TextView
+        android:id="@+id/fillfuel_car_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/fillfuel_car_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+  </LinearLayout>
+  
+  <carsto.customcontrols.EditTextClearBtn
+    android:hint="Пробег"
+    android:id="@+id/fillfuel_millage"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"/>
+  <carsto.customcontrols.EditTextClearBtn
+    android:hint="Стоимость"
+    android:id="@+id/fillfuel_cost"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"/>
+  <carsto.customcontrols.EditTextClearBtn
+    android:hint="Объем"
+    android:id="@+id/fillfuel_amount"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"/>
+  <Button
+    android:text="Сохранить"
+    android:id="@+id/fillfuel_complete_btn"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"/>
+</LinearLayout>

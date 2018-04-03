@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <TextView
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/part_description" />
+    <ImageButton
+        android:src="@drawable/ic_labor"
+        android:id="@+id/part_laborbutton"
+        android:background="@null"
+        android:layout_height="match_parent"
+        android:layout_width="40dp" />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/part_checkbox"
+        app:buttonTint="@color/Accent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+</LinearLayout>

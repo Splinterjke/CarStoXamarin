@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="#99000000"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="30dp">
+  <TextView
+      android:layout_centerHorizontal="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/register_title_text"
+      android:textColor="#FFFFFF"
+      android:text="REGISTRATION"
+      android:textSize="20dp" />
+  <EditText
+      android:layout_below="@id/register_title_text"
+      android:id="@+id/register_phone_text"
+      android:layout_marginTop="40dp"
+      android:singleLine="true"
+      android:layout_height="60dp"
+      android:layout_width="match_parent"
+      android:hint="PHONE"
+      android:textSize="20dp"
+      android:textColor="#FFFFFF"
+      android:textColorHint="#8D8D8D"
+      android:gravity="center" />
+  <EditText
+      android:layout_below="@id/register_phone_text"
+      android:id="@+id/register_password_text"
+      android:layout_marginTop="20dp"
+      android:singleLine="true"
+      android:layout_height="60dp"
+      android:layout_width="match_parent"
+      android:hint="PASSWORD"
+      android:textSize="20dp"
+      android:textColor="#FFFFFF"
+      android:textColorHint="#8D8D8D"
+      android:gravity="center" />
+  <EditText
+      android:layout_below="@id/register_password_text"
+      android:id="@+id/register_repeatpassword_text"
+      android:layout_marginTop="20dp"
+      android:singleLine="true"
+      android:layout_height="60dp"
+      android:layout_width="match_parent"
+      android:hint="REPEAT PASSWORD"
+      android:textSize="20dp"
+      android:textColor="#FFFFFF"
+      android:textColorHint="#8D8D8D"
+      android:gravity="center" />
+  <ImageButton
+      android:id="@+id/register_cancel_btn"
+      android:layout_marginTop="30dp"
+      android:layout_below="@id/register_repeatpassword_text"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="40dp"
+      android:layout_height="80dp"
+      android:layout_width="80dp"
+      android:scaleType="fitCenter"
+      android:background="@drawable/CancelButton"
+      android:padding="22dp" />
+  <ImageButton
+      android:layout_alignParentRight="true"
+      android:id="@+id/register_ok_btn"
+      android:layout_marginTop="30dp"
+      android:layout_below="@id/register_repeatpassword_text"
+      android:layout_marginRight="40dp"
+      android:layout_height="80dp"
+      android:layout_width="80dp"
+      android:scaleType="fitCenter"
+      android:background="@drawable/AcceptButton"
+      android:padding="16dp" />
+</RelativeLayout>

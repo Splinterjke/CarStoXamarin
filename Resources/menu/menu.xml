@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--For all properties see: http://developer.android.com/guide/topics/resources/menu-resource.html-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item android:id="@+id/nav_garagepage"
+          android:enabled="true"
+          android:title="ГАРАЖ"
+          android:icon="@drawable/ic_car"/>
+    <item android:id="@+id/nav_orderspage"
+          android:enabled="true"
+          android:title="ЗАКАЗЫ"
+          android:icon="@drawable/ic_orders"/>    
+    <item android:id="@+id/nav_notifications"
+          android:enabled="true"
+          android:title="УВЕДОМЛЕНИЯ"
+          android:icon="@drawable/ic_notifications"/>
+    <item android:id="@+id/nav_userprofile"
+          android:enabled="true"
+          android:title="ПРОФИЛЬ"
+          android:icon="@drawable/ic_profile"/>
+</menu>

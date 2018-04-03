@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="DefaultTheme.Base" parent="Theme.AppCompat.NoActionBar">
+    <item name="colorAccent">@color/Accent</item>
+    <item name="android:windowBackground">@color/Primary</item>    
+    <item name="android:textAppearanceButton">@style/TextButtonStyle</item>
+    <item name="android:textViewStyle">@style/TextViewStyle</item>
+    <item name="android:checkboxStyle">@style/CheckedTextViewStyle</item>
+    <item name="android:textColorHint">@color/Accent</item>
+    <item name="colorControlNormal">@color/Accent</item>
+    <item name="android:textColorPrimary">@color/Accent</item>
+    <item name="android:textColorSecondary">@color/Accent</item>
+    <item name="android:windowLightStatusBar">true</item>
+    <item name="fontPath">fonts/azbuka.ttf</item>
+  </style>
+
+  <!--DarkStatusBar-->
+  <style name="DarkStatusBar" parent="DefaultTheme.Base">
+    <item name="android:windowLightStatusBar">false</item>
+    <item name="android:windowBackground">@drawable/BackgroundSplash</item>
+  </style>
+
+  <!--TextView-->
+  <style name="TextViewStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textColor">@color/Accent</item>
+  </style>
+
+  <!--CheckedTextView-->
+  <style name="CheckedTextViewStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+    <item name="android:textColor">@color/Accent</item>
+  </style>
+
+  <!--Button-->
+  <style name="TextButtonStyle" parent="@android:style/TextAppearance.Widget.Button">
+    <item name="android:textColor">@color/Primary</item>
+  </style>
+
+  <!--Simple dialog-->
+  <style name="DialogNoBorder">
+    <item name="android:windowBackground">@null</item>
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:textColorPrimary">#FFFFFF</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <!--TabLayout-->
+  <style name="TabLayoutStyle">
+    <item name="android:layout_alignParentBottom">true</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <!--<item name="tabBackground">@drawable/TabSelector</item>-->
+    <item name="tabGravity">center</item>
+    <item name="tabIndicatorHeight">0dp</item>
+  </style>
+
+  <!--GarageCollapsingLayoutExpandedTextXtyle-->
+  <style name="GarageCollapsingLayoutExpandedTextXtyle" parent="@android:style/TextAppearance.Medium">
+    <item name="android:textSize">24sp</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <!--GarageCollapsingLayouCollapsedTextXtyle-->
+  <style name="GarageCollapsingLayouCollapsedTextXtyle" parent="@android:style/TextAppearance.Medium">
+    <item name="android:textSize">20sp</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+</resources>

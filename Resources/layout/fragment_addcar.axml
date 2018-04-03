@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+      <LinearLayout
+      android:id="@+id/addcar_stub_layout"
+   android:layout_marginRight="15dp"
+   android:layout_marginLeft="15dp"
+   android:orientation="vertical"
+   android:gravity="center"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+        <TextView
+                android:text="@string/AddCarText"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addcar_stub_text"
+                android:textColor="@color/Accent" />
+        <ImageButton
+              android:id="@+id/addcar_stub_btn"
+              android:layout_width="240dp"
+              android:layout_height="240dp"
+              android:background="@drawable/AddCarButton" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/addcar_fields_layout"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+                android:hint="VIN"
+                android:id="@+id/addcar_check_vin_text"
+                android:maxLength="17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <Button
+              android:id="@+id/addcar_check_vin_btn"
+              android:enabled="false"
+              android:background="@color/Accent"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="CHECK VIN"/>
+      </LinearLayout>
+    </FrameLayout>
+    <!--<EditText
+            android:id="@+id/addcar_color"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:hint="Цвет"/>
+      <EditText
+            android:id="@+id/addcar_mileage"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:hint="Пробег"/>
+      <EditText
+            android:id="@+id/addcar_gosnum"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:hint="Гос. номер"/>-->
+
+  </ScrollView>
+</RelativeLayout>

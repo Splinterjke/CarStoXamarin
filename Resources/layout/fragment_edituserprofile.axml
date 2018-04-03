@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#99000000"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edituserprofile_title_text"
+        android:textColor="#FFFFFF"
+        android:text="Введите пользовательские данные"
+        android:textSize="20dp"
+        android:gravity="center_horizontal" />
+  <FFImageLoading.Views.ImageViewAsync
+        android:layout_below="@id/edituserprofile_title_text"
+        android:id="@+id/edituserprofile_avatar"
+        android:padding="10dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_below="@id/edituserprofile_avatar"
+        android:id="@+id/edituserprofile_middlename_text"
+        android:singleLine="true"
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        android:hint="ФАМИЛИЯ"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#8D8D8D"
+        android:gravity="center" />
+    <EditText
+        android:layout_below="@id/edituserprofile_middlename_text"
+        android:id="@+id/edituserprofile_firstname_text"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        android:hint="ИМЯ"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#8D8D8D"
+        android:gravity="center" />
+    <EditText
+        android:layout_below="@id/edituserprofile_firstname_text"
+        android:id="@+id/edituserprofile_lastname_text"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        android:hint="ОТЧЕСТВО"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#8D8D8D"
+        android:gravity="center" />
+    <TextView
+        android:layout_below="@id/edituserprofile_lastname_text"
+        android:id="@+id/edituserprofile_birthdate_title"
+        android:layout_marginTop="20dp"
+        android:text="Дата рождения"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        tools:text="12.02.2017"
+        android:layout_below="@id/edituserprofile_birthdate_title"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/edituserprofile_birthdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_below="@id/edituserprofile_birthdate"
+        android:id="@+id/edituserprofile_gender_title"
+        android:layout_marginTop="20dp"
+        android:text="Пол"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+    <RadioGroup
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edituserprofile_gender_title"
+        android:orientation="horizontal"
+        android:id="@+id/edituserprofile_gender_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:textSize="16dp"
+            android:text="Мужской"
+            android:id="@+id/edituserprofile_gender_male"
+            android:layout_width="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:textSize="16dp"
+            android:text="Женский"
+            android:id="@+id/edituserprofile_gender_female"
+            android:layout_width="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <ImageButton
+        android:id="@+id/edituserprofile_cancel_btn"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/edituserprofile_gender_radiogroup"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/CancelButton"
+        android:padding="22dp" />
+    <ImageButton
+        android:layout_alignParentRight="true"
+        android:id="@+id/edituserprofile_ok_btn"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/edituserprofile_gender_radiogroup"
+        android:layout_marginRight="40dp"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/AcceptButton"
+        android:padding="16dp" />
+</RelativeLayout>

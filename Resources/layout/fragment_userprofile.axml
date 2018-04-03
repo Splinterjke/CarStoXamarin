@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/userprofile_avatar"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:scaleType="fitXY" />
+  <TextView
+        android:layout_marginTop="20dp"
+        android:text="Имя"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+    <carsto.customcontrols.EditTextClearBtn
+        android:text="12312312"
+        android:id="@+id/userprofile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="Дата рождения"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+    <TextView
+        android:text="12312312"
+        android:textSize="20dp"
+        android:id="@+id/userprofile_birthdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="Пол"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/userprofile_gender_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:textSize="16dp"
+            android:text="Мужской"
+            android:id="@+id/userprofile_gender_male"
+            android:layout_width="wrap_content"
+            android:textColor="@color/Accent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:textSize="16dp"
+            android:text="Женский"
+            android:id="@+id/userprofile_gender_female"
+            android:layout_width="wrap_content"
+            android:textColor="@color/Accent"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/userprofile_save_profile_btn"
+        android:text="Сохранить"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/userprofile_exit"
+        android:text="Выход"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

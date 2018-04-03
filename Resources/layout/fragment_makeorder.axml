@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <LinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <TextView
+        android:text="Выберите автомобиль"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/makerorder_car_ava"
+        android:src="@drawable/avacar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="30dp">
+      <ImageView
+          android:id="@+id/makeorder_car_left"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="2"/>
+      <TextView
+          android:id="@+id/makeorder_car_name"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"/>
+      <ImageView
+          android:id="@+id/makeorder_car_right"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="2"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/makeorder_diagnostics_btn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Диагностика" />
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/makeorder_input_layout_diagnostics"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <carsto.customcontrols.EditTextClearBtn
+            android:id="@+id/makeorder_diagnostics_text"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Диагностика" />
+      </android.support.design.widget.TextInputLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/makeorder_mechanical_btn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Слесарные работы" />
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/makeorder_input_layout_mechanical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <carsto.customcontrols.EditTextClearBtn
+            android:id="@+id/makeorder_mechanical_text"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Слесарные работы" />
+      </android.support.design.widget.TextInputLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/makeorder_bodypaint_btn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Малярно-кузовные" />
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/makeorder_input_layout_bodypaint"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <carsto.customcontrols.EditTextClearBtn
+            android:id="@+id/makeorder_bodypaint_text"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Малярно-кузовные" />
+      </android.support.design.widget.TextInputLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/makeorder_extras_btn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Доп. оборудование" />
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/makeorder_input_layout_extras"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <carsto.customcontrols.EditTextClearBtn
+            android:id="@+id/makeorder_extras_text"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Доп. оборудование" />
+      </android.support.design.widget.TextInputLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/makeorder_wheelalign_btn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="ШМ, Р/С, кондиционер" />
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/makeorder_input_layout_wheelalign"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <carsto.customcontrols.EditTextClearBtn
+            android:id="@+id/makeorder_wheelalign_text"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ШМ, Р/С, кондиционер" />
+      </android.support.design.widget.TextInputLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/makeorder_comment_btn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Общий комментарий" />
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/makeorder_input_layout_comment"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <carsto.customcontrols.EditTextClearBtn
+            android:visibility="gone"
+            android:id="@+id/makeorder_comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Общий комментарий" />
+      </android.support.design.widget.TextInputLayout>
+    </FrameLayout>
+    <Button
+        android:id="@+id/makeorder_complete_btn"
+        android:visibility="invisible"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="Создать заказ" />
+  </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

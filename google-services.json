@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1025695905136",
+    "firebase_url": "https://carsto-1b7b4.firebaseio.com",
+    "project_id": "carsto-1b7b4",
+    "storage_bucket": "carsto-1b7b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025695905136:android:ea8b797745023961",
+        "android_client_info": {
+          "package_name": "ru.carsto.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025695905136-oupfu0lms7l55kstq1pf5is9ardk8jai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQCyb_Ecp3HPWhCFfJahN85rAxGeIF1ZU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

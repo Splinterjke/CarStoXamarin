@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <TextView
+    android:text="ДЕТАЛИ"
+    android:layout_margin="10dp"
+    android:id="@+id/preorder_partTextView"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"/>
+  <android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/preorder_preOrderPartList"
+    android:layout_below="@+id/preorder_partTextView"/>
+  <TextView
+    android:text="РАБОТЫ"
+    android:layout_margin="10dp"
+    android:id="@+id/preorder_laborTextView"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/preorder_preOrderPartList"/>
+  <android.support.v7.widget.RecyclerView
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:id="@+id/preorder_preOrderLaborList"
+   android:layout_below="@+id/preorder_laborTextView"
+   android:layout_above="@+id/preorder_acceptButton"/>
+  <Button
+    android:text="СОЗДАТЬ ПРЕДЗАКАЗ"
+    android:id="@+id/preorder_acceptButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Accent"
+    android:layout_alignParentBottom="true"/>
+</RelativeLayout>
